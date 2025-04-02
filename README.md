@@ -13,7 +13,9 @@ go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
 - 缓存： redis
   
 ## 运行
+```
 make migrate_up
 sqlc generate
 go mod tidy
 go run main.go
+```
