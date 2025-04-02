@@ -1,0 +1,48 @@
+database:
+  driver: postgres
+  host: localhost
+  port: 15432
+  user: lang
+  password: password
+  db_name: urldb
+  ssl_mode: disable
+  max_idle_conns: 5
+  max_open_conns: 5
+
+cache:
+  address: localhost:16379
+  password:
+  db: 0
+  url_duration: 1h
+  email_code_duration: 2m
+
+rand_num:
+  length: 6
+
+email:
+  password: lqiPivBJPLnukHpy
+  username: MS_VyrzQl@trial-o65qngkw5owgwr12.mlsender.net
+  host_address: smtp.mailersend.net
+  host_port: 587
+  subject: "This is my test mail"
+  test_mail: "jingyifsy@gmail.com"
+
+server:
+  addr: ":8080"
+  read_timeout: 5s
+  write_timeout: 5s
+
+app:
+  base_url: "http://vdong.xyz:8080"
+  default_duration: 10h
+  cleanup_interval: 2h
+
+shortcode:
+  length: 6
+
+logger:
+  level: info
+
+jwt:
+  secret: "mycompletedsecret"
+  duration: 24h
